@@ -1,4 +1,7 @@
-# erlfmt
+# erlfmt (but with tabs)
+
+> Forked from `erlfmt` solely to [use tab instead of spaces](https://github.com/WhatsApp/erlfmt/issues/26),
+> for indentiation. No commitments on long-term maintenance of this fork.
 
 erlfmt is an opinionated Erlang code formatter. By automating the process of
 formatting the code, it frees your team up to focus on what the code does,

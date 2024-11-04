@@ -1,3 +1,9 @@
+%% This file has been modified from its original version.
+%% Modifications made by: Tyler Hall
+%% Date of modification: 2024-11-04
+%% Description of changes: define INDENT macro to be 1, instead of 4, in
+%% order to use tab, instead of spaces, for indentation
+%%
 %% Copyright (c) Meta Platforms, Inc. and its affiliates.
 %%
 %% Licensed under the Apache License, Version 2.0 (the "License");
@@ -45,7 +51,7 @@
     fold_doc/2
 ]).
 
--define(INDENT, 4).
+-define(INDENT, 1).
 
 -spec to_algebra(erlfmt_parse:any_node()) -> erlfmt_algebra:doc().
 to_algebra({shebang, Meta, String}) ->

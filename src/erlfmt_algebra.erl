@@ -1,3 +1,9 @@
+%% This file has been modified from its original version.
+%% Modifications made by: Tyler Hall
+%% Date of modification: 2024-11-04
+%% Description of changes: Use a tab instead of a space
+%% for indentation in indent/1
+%%
 %% Copyright (c) 2012-2020 Plataformatec
 %% Copyright (c) Meta Platforms, Inc. and its affiliates.
 %%
@@ -584,5 +590,5 @@ force_next_flex_break([]) ->
 indent(0) ->
     ?newline;
 indent(Indent) when is_integer(Indent) ->
-    Spaces = binary:copy(<<" ">>, Indent),
+    Spaces = binary:copy(<<"\t">>, Indent),
     <<?newline/binary, Spaces/binary>>.
